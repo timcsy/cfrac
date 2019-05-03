@@ -117,7 +117,7 @@ vector<N> from_conti_string(string s, int precision, N zero) {
 	}
 
 	if (precision >= tokens.size()) precision = tokens.size() - 1;
-	vector<N> sub_tokens(tokens.cbegin(), tokens.cbegin() + precision + 1);
+	vector<N> sub_tokens(tokens.begin(), tokens.begin() + precision + 1);
 	return sub_tokens;
 }
 
